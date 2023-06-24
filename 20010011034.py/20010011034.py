@@ -141,7 +141,7 @@ def secimler(secim_no):
                             dosya.write(anahtar)
                             for i in range(len(kitaplar[anahtar])):
                                 dosya.write(" " + kitaplar[anahtar][i])
-                            dosya.write("\n")  # Yeni satır ekleme
+                            dosya.write("\n")  
                     print("Güncelleme işlemi başarıyla gerçekleştirildi.\n")
                 else:
                     print("Güncellenecek kitapla ilgili kayıt bulunamadı!")
@@ -226,7 +226,7 @@ def secimler(secim_no):
                         yas = simdiki_yil - dogum_tarihi
                         kitap_ad = input("Okurun aldığı kitabın adını giriniz->")
                         kayit_tarihi = int(input(f"{i + 1}.Okurun kayıt tarihini giriniz->"))
-                        # print(yas)
+                        
                         # Kitap bilgilerini dosyaya yazdırma
                         file.write(girilen_okur_no + " " + "\n")
                         okur["okurun adı"] = okur_ad
@@ -244,7 +244,7 @@ def secimler(secim_no):
 
                 print("Okur girişi işlemi başarıyla gerçekleştirilmiştir.")
 
-            except Exception as e: #kapsamlı hatamı görmek için
+            except Exception as e: #kapsamlı hatayı görmek için
                 print("Hata:", e)
                 raise
 
